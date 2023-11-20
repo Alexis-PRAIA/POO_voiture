@@ -1,9 +1,7 @@
-// classe.cpp
-
 #include "classe.hpp"
 using namespace std;
 
-Voiture::Voiture() : couleur("Inconnu"), marque("Inconnu"), vitesse(0) {}
+Voiture::Voiture() : couleur("Verte"), marque("Renault"), vitesse(0) {}
 
 Voiture::Voiture(const string& couleur, const string& marque, int vitesse)
     : couleur(couleur), marque(marque), vitesse(vitesse) {}
