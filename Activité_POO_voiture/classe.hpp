@@ -1,25 +1,23 @@
-#ifndef VOITURE_H
-#define VOITURE_H
-
 #include <string>
+using namespace std;
 
-class Voiture {
+
+class Voiture
+{
 private:
-    std::string couleur;
-    std::string marque;
+    string marque;
     int vitesse;
-
+    
 public:
     Voiture();
-    Voiture(const std::string& couleur, const std::string& marque, int vitesse);
+    ~Voiture();
+    void setMarque(string marq);
+    void setCouleur(string coul);
+    void setVitesse(int vit);
+    string getMarque();
+    string getCouleur();
+    int getVitesse();
+    string couleur;
 
-    std::string getCouleur() const;
-    std::string getMarque() const;
-    int getVitesse() const;
 
-    void setCouleur(const std::string& nouvelleCouleur);
-    void setMarque(const std::string& nouvelleMarque);
-    void setVitesse(int nouvelleVitesse);
 };
-
-#endif

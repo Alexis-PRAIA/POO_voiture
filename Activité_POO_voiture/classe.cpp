@@ -1,31 +1,38 @@
-#include "classe.hpp"
+#include <string>
+#include <iostream>
+#include "Classe.h"
+
 using namespace std;
 
-Voiture::Voiture() : couleur("Verte"), marque("Renault"), vitesse(0) {}
-
-Voiture::Voiture(const string& couleur, const string& marque, int vitesse)
-    : couleur(couleur), marque(marque), vitesse(vitesse) {}
-
-string Voiture::getCouleur() const {
-    return couleur;
+Voiture::Voiture() {
+    this->vitesse=0;
+    cout << "Un objet a été créé" << endl;
 }
 
-string Voiture::getMarque() const {
-    return marque;
+Voiture::~Voiture() {
+    cout << "Un objet a été détruit" << endl;
 }
 
-int Voiture::getVitesse() const {
-    return vitesse;
+void Voiture::setMarque(string marq) {
+    this->marque = marq;
 }
 
-void Voiture::setCouleur(const string& nouvelleCouleur) {
-    couleur = nouvelleCouleur;
+void Voiture::setCouleur(string coul) {
+    this->couleur = coul;
 }
 
-void Voiture::setMarque(const string& nouvelleMarque) {
-    marque = nouvelleMarque;
+void Voiture::setVitesse(int vit) {
+    this->vitesse = vit;
 }
 
-void Voiture::setVitesse(int nouvelleVitesse) {
-    vitesse = nouvelleVitesse;
+string Voiture::getCouleur() {
+    return this->couleur;
+}
+
+string Voiture::getMarque() {
+    return this->marque;
+}
+
+int Voiture::getVitesse() {
+    return this->vitesse;
 }

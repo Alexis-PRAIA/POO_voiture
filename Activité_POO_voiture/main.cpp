@@ -1,24 +1,15 @@
-#include "classe.hpp"
 #include <iostream>
+#include <string>
 
 using namespace std;
+#include "Classe.h";
 
 int main() {
-    Voiture maVoiture;
-
-    cout << "Propriétés initiales de la voiture : \n" << endl;
-    cout << "Marque : " << maVoiture.getMarque() << endl;
-    cout << "Couleur : " << maVoiture.getCouleur() << endl;
-    cout << "Vitesse : " << maVoiture.getVitesse() << " km/h" << endl;
-
-    maVoiture.setMarque("Renault");
-    maVoiture.setCouleur("Verte");
-    maVoiture.setVitesse(20);
-
-    cout << "\n\nNouvelles propriétés de la voiture : " << endl;
-    cout << "Marque : " << maVoiture.getMarque() << endl;
-    cout << "Couleur : " << maVoiture.getCouleur() << endl;
-    cout << "Vitesse : " << maVoiture.getVitesse() << " km/h" << endl;
+    Voiture renault1;
+    renault1.setCouleur("vert");
+    renault1.couleur="rouge";
+    cout<<"La couleur est "<<renault1.getCouleur()<<endl;
+    cout<<"La vitesse est "<<renault1.getVitesse()<<endl;
 
     return 0;
 }
