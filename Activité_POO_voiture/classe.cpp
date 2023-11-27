@@ -1,6 +1,6 @@
 #include <string>
 #include <iostream>
-#include "Classe.h"
+#include "Classe.hpp"
 
 using namespace std;
 

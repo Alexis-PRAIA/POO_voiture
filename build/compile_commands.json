@@ -1,12 +1,12 @@
 [
 {
   "directory": "/workspaces/POO_voiture/build",
-  "command": "/usr/bin/g++ -g -o CMakeFiles/POO_voiture.dir/main.cpp.o -c /workspaces/POO_voiture/main.cpp",
-  "file": "/workspaces/POO_voiture/main.cpp"
+  "command": "/usr/bin/g++ -g -o CMakeFiles/POO_voiture_pointeurs.dir/main.cpp.o -c /workspaces/POO_voiture/Activité_POO_voiture/main.cpp",
+  "file": "/workspaces/POO_voiture/Activité_POO_voiture/main.cpp"
 },
 {
   "directory": "/workspaces/POO_voiture/build",
-  "command": "/usr/bin/g++ -g -o CMakeFiles/POO_voiture.dir/classe.cpp.o -c /workspaces/POO_voiture/classe.cpp",
-  "file": "/workspaces/POO_voiture/classe.cpp"
+  "command": "/usr/bin/g++ -g -o CMakeFiles/POO_voiture_pointeurs.dir/classe.cpp.o -c /workspaces/POO_voiture/Activité_POO_voiture/classe.cpp",
+  "file": "/workspaces/POO_voiture/Activité_POO_voiture/classe.cpp"
 }
 ]
