@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-#include "Classe.h";
+#include "classe.hpp"
 
 int main() {
     Voiture renault1;

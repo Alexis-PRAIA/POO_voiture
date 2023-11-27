@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: POO_voiture
+# Project: POO_voiture_pointeurs
 # Configurations: Debug
 # =============================================================================
 
@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/POO_voiture/build && /usr/bin/cmake --regenerate-during-build -S/workspaces/POO_voiture -B/workspaces/POO_voiture/build
+  COMMAND = cd /workspaces/POO_voiture/build && /usr/bin/cmake --regenerate-during-build -S/workspaces/POO_voiture/Activité_POO_voiture -B/workspaces/POO_voiture/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -125,12 +125,6 @@ build ExperimentalTest: phony CMakeFiles/ExperimentalTest
 
 
 #############################################
-# Utility command for ContinuousUpdate
-
-build ContinuousUpdate: phony CMakeFiles/ContinuousUpdate
-
-
-#############################################
 # Utility command for NightlyUpdate
 
 build NightlyUpdate: phony CMakeFiles/NightlyUpdate
@@ -207,44 +201,6 @@ build NightlyCoverage: phony CMakeFiles/NightlyCoverage
 
 build ExperimentalStart: phony CMakeFiles/ExperimentalStart
 
-# =============================================================================
-# Object build statements for EXECUTABLE target POO_voiture
-
-
-#############################################
-# Order-only phony target for POO_voiture
-
-build cmake_object_order_depends_target_POO_voiture: phony || CMakeFiles/POO_voiture.dir
-
-build CMakeFiles/POO_voiture.dir/main.cpp.o: CXX_COMPILER__POO_voiture_Debug ../main.cpp || cmake_object_order_depends_target_POO_voiture
-  DEP_FILE = CMakeFiles/POO_voiture.dir/main.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/POO_voiture.dir
-  OBJECT_FILE_DIR = CMakeFiles/POO_voiture.dir
-
-build CMakeFiles/POO_voiture.dir/classe.cpp.o: CXX_COMPILER__POO_voiture_Debug ../classe.cpp || cmake_object_order_depends_target_POO_voiture
-  DEP_FILE = CMakeFiles/POO_voiture.dir/classe.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/POO_voiture.dir
-  OBJECT_FILE_DIR = CMakeFiles/POO_voiture.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target POO_voiture
-
-
-#############################################
-# Link the executable POO_voiture
-
-build POO_voiture: CXX_EXECUTABLE_LINKER__POO_voiture_Debug CMakeFiles/POO_voiture.dir/main.cpp.o CMakeFiles/POO_voiture.dir/classe.cpp.o
-  FLAGS = -g
-  LINK_FLAGS = -rdynamic
-  OBJECT_DIR = CMakeFiles/POO_voiture.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = POO_voiture
-  TARGET_PDB = POO_voiture.dbg
-
 
 #############################################
 # Utility command for package
@@ -301,6 +257,50 @@ build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
 
 
 #############################################
+# Utility command for ContinuousUpdate
+
+build ContinuousUpdate: phony CMakeFiles/ContinuousUpdate
+
+# =============================================================================
+# Object build statements for EXECUTABLE target POO_voiture_pointeurs
+
+
+#############################################
+# Order-only phony target for POO_voiture_pointeurs
+
+build cmake_object_order_depends_target_POO_voiture_pointeurs: phony || CMakeFiles/POO_voiture_pointeurs.dir
+
+build CMakeFiles/POO_voiture_pointeurs.dir/main.cpp.o: CXX_COMPILER__POO_voiture_pointeurs_Debug /workspaces/POO_voiture/Activité_POO_voiture/main.cpp || cmake_object_order_depends_target_POO_voiture_pointeurs
+  DEP_FILE = CMakeFiles/POO_voiture_pointeurs.dir/main.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/POO_voiture_pointeurs.dir
+  OBJECT_FILE_DIR = CMakeFiles/POO_voiture_pointeurs.dir
+
+build CMakeFiles/POO_voiture_pointeurs.dir/classe.cpp.o: CXX_COMPILER__POO_voiture_pointeurs_Debug /workspaces/POO_voiture/Activité_POO_voiture/classe.cpp || cmake_object_order_depends_target_POO_voiture_pointeurs
+  DEP_FILE = CMakeFiles/POO_voiture_pointeurs.dir/classe.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/POO_voiture_pointeurs.dir
+  OBJECT_FILE_DIR = CMakeFiles/POO_voiture_pointeurs.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target POO_voiture_pointeurs
+
+
+#############################################
+# Link the executable POO_voiture_pointeurs
+
+build POO_voiture_pointeurs: CXX_EXECUTABLE_LINKER__POO_voiture_pointeurs_Debug CMakeFiles/POO_voiture_pointeurs.dir/main.cpp.o CMakeFiles/POO_voiture_pointeurs.dir/classe.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = CMakeFiles/POO_voiture_pointeurs.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = POO_voiture_pointeurs
+  TARGET_PDB = POO_voiture_pointeurs.dbg
+
+
+#############################################
 # Custom command for CMakeFiles/NightlyMemCheck
 
 build CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
@@ -353,14 +353,6 @@ build CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
 
 build CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
   COMMAND = cd /workspaces/POO_voiture/build && /usr/bin/ctest -D ExperimentalTest
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ContinuousUpdate
-
-build CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/POO_voiture/build && /usr/bin/ctest -D ContinuousUpdate
   pool = console
 
 
@@ -523,6 +515,14 @@ build CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
   COMMAND = cd /workspaces/POO_voiture/build && /usr/bin/ctest -D ContinuousSubmit
   pool = console
 
+
+#############################################
+# Custom command for CMakeFiles/ContinuousUpdate
+
+build CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/POO_voiture/build && /usr/bin/ctest -D ContinuousUpdate
+  pool = console
+
 # =============================================================================
 # Target aliases.
 
@@ -534,7 +534,7 @@ build CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
 #############################################
 # Folder: /workspaces/POO_voiture/build
 
-build all: phony POO_voiture
+build all: phony POO_voiture_pointeurs
 
 # =============================================================================
 # Unknown Build Time Dependencies.
@@ -548,14 +548,14 @@ build all: phony POO_voiture
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /usr/share/cmake-3.18/Modules/CMakeCInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.18/Modules/CPack.cmake /usr/share/cmake-3.18/Modules/CPackComponent.cmake /usr/share/cmake-3.18/Modules/CTest.cmake /usr/share/cmake-3.18/Modules/CTestTargets.cmake /usr/share/cmake-3.18/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU.cmake /usr/share/cmake-3.18/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.18/Modules/Platform/Linux.cmake /usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.18/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.18.4/CMakeCCompiler.cmake CMakeFiles/3.18.4/CMakeCXXCompiler.cmake CMakeFiles/3.18.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /usr/share/cmake-3.18/Modules/CMakeCInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.18/Modules/CPack.cmake /usr/share/cmake-3.18/Modules/CPackComponent.cmake /usr/share/cmake-3.18/Modules/CTest.cmake /usr/share/cmake-3.18/Modules/CTestTargets.cmake /usr/share/cmake-3.18/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU.cmake /usr/share/cmake-3.18/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.18/Modules/Platform/Linux.cmake /usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.18/Templates/CPackConfig.cmake.in /workspaces/POO_voiture/Activité_POO_voiture/CMakeLists.txt CMakeCache.txt CMakeFiles/3.18.4/CMakeCCompiler.cmake CMakeFiles/3.18.4/CMakeCXXCompiler.cmake CMakeFiles/3.18.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /usr/share/cmake-3.18/Modules/CMakeCInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.18/Modules/CPack.cmake /usr/share/cmake-3.18/Modules/CPackComponent.cmake /usr/share/cmake-3.18/Modules/CTest.cmake /usr/share/cmake-3.18/Modules/CTestTargets.cmake /usr/share/cmake-3.18/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU.cmake /usr/share/cmake-3.18/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.18/Modules/Platform/Linux.cmake /usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.18/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.18.4/CMakeCCompiler.cmake CMakeFiles/3.18.4/CMakeCXXCompiler.cmake CMakeFiles/3.18.4/CMakeSystem.cmake: phony
+build /usr/share/cmake-3.18/Modules/CMakeCInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.18/Modules/CPack.cmake /usr/share/cmake-3.18/Modules/CPackComponent.cmake /usr/share/cmake-3.18/Modules/CTest.cmake /usr/share/cmake-3.18/Modules/CTestTargets.cmake /usr/share/cmake-3.18/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU.cmake /usr/share/cmake-3.18/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.18/Modules/Platform/Linux.cmake /usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.18/Templates/CPackConfig.cmake.in /workspaces/POO_voiture/Activité_POO_voiture/CMakeLists.txt CMakeCache.txt CMakeFiles/3.18.4/CMakeCCompiler.cmake CMakeFiles/3.18.4/CMakeCXXCompiler.cmake CMakeFiles/3.18.4/CMakeSystem.cmake: phony
 
 
 #############################################

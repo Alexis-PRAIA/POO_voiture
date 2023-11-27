@@ -4,7 +4,7 @@
 
 
 # Configuration directories and files
-SourceDirectory: /workspaces/POO_voiture
+SourceDirectory: /workspaces/POO_voiture/Activité_POO_voiture
 BuildDirectory: /workspaces/POO_voiture/build
 
 # Where to place the cost data store
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/workspaces/POO_voiture"
+ConfigureCommand: "/usr/bin/cmake" "/workspaces/POO_voiture/Activité_POO_voiture"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
@@ -57,9 +57,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: /usr/local/bin/git
+UpdateCommand: 
 UpdateOptions: 
-UpdateType: git
+UpdateType: 
 
 # Compiler info
 Compiler: /usr/bin/g++
