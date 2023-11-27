@@ -1,23 +1,21 @@
-#include <string>
+// Classe.cpp
 #include <iostream>
 #include "Classe.hpp"
 
-using namespace std;
-
 Voiture::Voiture() {
-    this->vitesse=0;
-    cout << "Un objet a été créé" << endl;
+    this->vitesse = 0;
+    std::cout << "Un objet a été créé" << std::endl;
 }
 
 Voiture::~Voiture() {
-    cout << "Un objet a été détruit" << endl;
+    std::cout << "Un objet a été détruit" << std::endl;
 }
 
-void Voiture::setMarque(string marq) {
+void Voiture::setMarque(std::string marq) {
     this->marque = marq;
 }
 
-void Voiture::setCouleur(string coul) {
+void Voiture::setCouleur(std::string coul) {
     this->couleur = coul;
 }
 
@@ -25,11 +23,11 @@ void Voiture::setVitesse(int vit) {
     this->vitesse = vit;
 }
 
-string Voiture::getCouleur() {
+std::string Voiture::getCouleur() {
     return this->couleur;
 }
 
-string Voiture::getMarque() {
+std::string Voiture::getMarque() {
     return this->marque;
 }
 
