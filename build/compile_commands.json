@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/workspaces/POO_voiture/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/Test_POO.dir/main.cpp.o -c /workspaces/POO_voiture/Activité_POO_voiture/main.cpp",
+  "file": "/workspaces/POO_voiture/Activité_POO_voiture/main.cpp"
+},
+{
+  "directory": "/workspaces/POO_voiture/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/Test_POO.dir/classe.cpp.o -c /workspaces/POO_voiture/Activité_POO_voiture/classe.cpp",
+  "file": "/workspaces/POO_voiture/Activité_POO_voiture/classe.cpp"
+}
+]
