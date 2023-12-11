@@ -1,4 +1,4 @@
-# Install script for directory: /workspaces/POO_voiture/Activité_POO_voiture
+# Install script for directory: /workspaces/POO_voiture/Activité_POO_vehicule
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
