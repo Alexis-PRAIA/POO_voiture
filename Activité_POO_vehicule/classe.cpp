@@ -38,7 +38,7 @@ int Vehicule::getVitesse() {
 
 // Définition des constructeurs et méthodes pour les classes dérivées
 scooter::scooter() {
-    this->vitesse = 130;
+    //this->vitesse = 130;
     std::cout << "Un scooter a été créé" << std::endl;
 }
 
@@ -51,7 +51,7 @@ int scooter::getCylindree() {
 }
 
 camion::camion() {
-    this->vitesse = 0;
+    //this->vitesse = 0;
     std::cout << "Un camion a été créé" << std::endl;
 }
 
@@ -64,7 +64,7 @@ int camion::getPoidsCharges() {
 }
 
 Voiture::Voiture() {
-    this->vitesse = 0;
+    //this->vitesse = 0;
     std::cout << "Une voiture a été créée" << std::endl;
 }
 
